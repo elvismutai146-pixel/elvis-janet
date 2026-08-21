@@ -1,0 +1,557 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #fff5f8;
+    color: #3d1f2d;
+    overflow-x: hidden;
+}
+
+/* Welcome Screen */
+
+.welcome {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background:
+        linear-gradient(
+            rgba(80, 0, 30, 0.55),
+            rgba(120, 0, 50, 0.65)
+        ),
+        url("images/photo1.jpg");
+
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.welcome-content {
+    max-width: 700px;
+    padding: 30px;
+    animation: fadeIn 2s ease;
+}
+
+.heart-icon {
+    font-size: 70px;
+    animation: heartbeat 1.5s infinite;
+}
+
+.welcome h1 {
+    font-family: "Dancing Script", cursive;
+    font-size: 75px;
+    margin: 15px 0;
+}
+
+.since {
+    font-size: 28px;
+}
+
+.date {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.intro {
+    margin: 30px 0;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+button,
+.hero-button {
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    background: white;
+    color: #c2185b;
+    padding: 15px 30px;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover,
+.hero-button:hover {
+    transform: scale(1.08);
+    background: #ffe1ec;
+}
+
+/* Hidden */
+
+.hidden {
+    display: none;
+}
+
+/* Navigation */
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+    background: rgba(255,255,255,0.95);
+    box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+}
+
+.logo {
+    font-family: "Dancing Script", cursive;
+    font-size: 30px;
+    color: #c2185b;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #4a2735;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #c2185b;
+}
+
+/* Hero */
+
+.hero {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(255, 190, 210, 0.55),
+            rgba(255, 225, 235, 0.7)
+        ),
+        url("images/photo2.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    padding: 30px;
+}
+
+.small-title,
+.section-label {
+    letter-spacing: 3px;
+    color: #c2185b;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-family: "Dancing Script", cursive;
+    font-size: 90px;
+    margin: 20px 0;
+    color: #9b1747;
+}
+
+.hero h1 span {
+    font-size: 65px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+/* Sections */
+
+.section,
+.reasons-section,
+.counter-section,
+.timeline-section,
+.future-section {
+    padding: 100px 8%;
+    text-align: center;
+}
+
+.section h2,
+.reasons-section h2,
+.timeline-section h2,
+.future-section h2 {
+    font-family: "Dancing Script", cursive;
+    font-size: 55px;
+    margin: 15px 0 30px;
+    color: #9b1747;
+}
+
+.story-text {
+    max-width: 800px;
+    margin: auto;
+}
+
+.story-text p {
+    font-size: 18px;
+    line-height: 2;
+    margin-bottom: 20px;
+}
+
+.signature {
+    font-family: "Dancing Script", cursive;
+    font-size: 28px !important;
+    color: #c2185b;
+}
+
+/* Counter */
+
+.counter-section {
+    background: #c2185b;
+    color: white;
+}
+
+.counter-section h2 {
+    font-family: "Dancing Script", cursive;
+    font-size: 45px;
+    margin-bottom: 40px;
+}
+
+.counter {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.counter div {
+    width: 130px;
+    padding: 25px 10px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.15);
+}
+
+.counter span {
+    display: block;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.counter small {
+    font-size: 13px;
+}
+
+/* Timeline */
+
+.timeline {
+    max-width: 800px;
+    margin: auto;
+}
+
+.timeline-item {
+    margin: 30px 0;
+}
+
+.timeline-date {
+    font-weight: bold;
+    color: #c2185b;
+    margin-bottom: 10px;
+}
+
+.timeline-card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.timeline-card h3 {
+    color: #c2185b;
+    margin-bottom: 10px;
+}
+
+/* Gallery */
+
+.memories-section {
+    background: #fff;
+}
+
+.section-description {
+    margin-bottom: 40px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.photo-card {
+    background: white;
+    padding: 12px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: 0.4s;
+}
+
+.photo-card:hover {
+    transform: translateY(-10px) rotate(1deg);
+}
+
+.photo-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.photo-card p {
+    padding: 15px 5px;
+    font-family: "Dancing Script", cursive;
+    font-size: 20px;
+}
+
+/* Reasons */
+
+.reasons {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.reason {
+    padding: 30px 20px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.07);
+}
+
+.reason span {
+    font-size: 45px;
+}
+
+.reason h3 {
+    margin: 15px 0;
+    color: #c2185b;
+}
+
+/* Love Letter */
+
+.letter-section {
+    padding: 100px 8%;
+    background:
+        linear-gradient(
+            rgba(255,220,230,0.85),
+            rgba(255,240,245,0.95)
+        );
+}
+
+.letter {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+    text-align: left;
+}
+
+.letter h2 {
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+    font-size: 55px;
+    color: #9b1747;
+    margin: 20px 0 40px;
+}
+
+.letter p {
+    line-height: 2;
+    margin-bottom: 20px;
+}
+
+.letter-ending {
+    text-align: right;
+    font-family: "Dancing Script", cursive;
+    font-size: 25px;
+    color: #c2185b;
+}
+
+/* Future */
+
+.future-box {
+    max-width: 700px;
+    margin: 40px auto;
+    background: white;
+    padding: 50px;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.future-box h3 {
+    font-family: "Dancing Script", cursive;
+    font-size: 35px;
+    color: #c2185b;
+    margin-bottom: 20px;
+}
+
+/* Final */
+
+.final-section {
+    text-align: center;
+    padding: 120px 20px;
+    background: #c2185b;
+    color: white;
+}
+
+.big-heart {
+    font-size: 90px;
+    animation: heartbeat 1.5s infinite;
+}
+
+.final-section h2 {
+    font-family: "Dancing Script", cursive;
+    font-size: 55px;
+    margin: 20px;
+}
+
+.forever {
+    font-family: "Dancing Script", cursive;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+/* Footer */
+
+footer {
+    background: #3b1525;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    line-height: 2;
+}
+
+/* Floating Hearts */
+
+.hearts {
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.floating-heart {
+    position: fixed;
+    bottom: -20px;
+    animation: floatHeart 5s linear forwards;
+    font-size: 20px;
+}
+
+/* Animations */
+
+@keyframes heartbeat {
+
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.25);
+    }
+
+}
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+@keyframes floatHeart {
+
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(-100vh) rotate(360deg);
+        opacity: 0;
+    }
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 800px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .welcome h1 {
+        font-size: 55px;
+    }
+
+    .hero h1 {
+        font-size: 60px;
+    }
+
+    .hero h1 span {
+        font-size: 45px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .reasons {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .gallery,
+    .reasons {
+        grid-template-columns: 1fr;
+    }
+
+    .letter {
+        padding: 30px;
+    }
+
+    .counter div {
+        width: 100px;
+    }
+
+}
