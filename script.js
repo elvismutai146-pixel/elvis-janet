@@ -2,27 +2,23 @@
 // OPEN OUR STORY
 // ================================
 
-const openStory = document.getElementById("openStory");
-const welcome = document.getElementById("welcome");
-const mainContent = document.getElementById("mainContent");
+function openStory() {
 
-openStory.addEventListener("click", function () {
+    const welcomeScreen =
+        document.getElementById("welcomeScreen");
 
-    welcome.style.opacity = "0";
+    const website =
+        document.getElementById("website");
 
-    setTimeout(function () {
+    welcomeScreen.style.display = "none";
 
-        welcome.style.display = "none";
-        mainContent.classList.remove("hidden");
+    website.classList.remove("hidden");
 
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
-
-    }, 700);
-
-});
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
 
 
 // ================================
