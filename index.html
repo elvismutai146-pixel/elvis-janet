@@ -10,419 +10,660 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- Floating Hearts -->
-    <div class="hearts"></div>
+<!-- =========================
+     OPENING SCREEN
+========================= -->
 
-    <!-- Opening Screen -->
-    <section id="welcome" class="welcome">
+<section class="welcome-screen" id="welcomeScreen">
 
-        <div class="welcome-content">
+    <div class="welcome-content">
 
-            <div class="heart-icon">❤️</div>
+        <div class="heart">❤️</div>
 
-            <h1>Janet & Elvis</h1>
+        <p class="welcome-small">
+            A STORY WRITTEN BY TWO HEARTS
+        </p>
 
-            <p class="since">Our Love Story</p>
+        <h1>
+            Janet <span>❤️</span> Elvis
+        </h1>
 
-            <p class="date">Since 25 November 2025</p>
+        <p class="since">
+            Our Love Story
+        </p>
 
-            <p class="intro">
-                Some memories fade with time...
-                <br>
-                but the memories we create together are forever. ❤️
+        <p class="date">
+            Since 25 November 2025
+        </p>
+
+        <p class="welcome-message">
+            Some memories fade with time,
+            but the memories we create together
+            are forever.
+        </p>
+
+        <button id="openButton">
+            Open Our Story ❤️
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     MAIN WEBSITE
+========================= -->
+
+<div id="website" class="hidden">
+
+
+<!-- NAVIGATION -->
+
+<nav>
+
+    <div class="logo">
+        Janet ❤️ Elvis
+    </div>
+
+    <div class="nav-links">
+
+        <a href="#home">Home</a>
+        <a href="#story">Our Story</a>
+        <a href="#memories">Memories</a>
+        <a href="#letter">Letter</a>
+        <a href="#future">Future</a>
+
+    </div>
+
+</nav>
+
+
+<!-- =========================
+     HOME
+========================= -->
+
+<section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <p class="label">
+            WELCOME TO OUR LITTLE WORLD
+        </p>
+
+        <h1>
+            Janet <span>❤️</span> Elvis
+        </h1>
+
+        <p class="hero-text">
+            Two hearts, one beautiful journey,
+            and countless memories still waiting to be made.
+        </p>
+
+        <a href="#story" class="main-button">
+            Explore Our Story 💕
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     COUNTER
+========================= -->
+
+<section class="counter-section">
+
+    <p class="label white-label">
+        OUR JOURNEY
+    </p>
+
+    <h2>
+        We've Been Creating Memories For...
+    </h2>
+
+    <div class="counter">
+
+        <div class="counter-box">
+            <strong id="days">0</strong>
+            <span>Days</span>
+        </div>
+
+        <div class="counter-box">
+            <strong id="hours">0</strong>
+            <span>Hours</span>
+        </div>
+
+        <div class="counter-box">
+            <strong id="minutes">0</strong>
+            <span>Minutes</span>
+        </div>
+
+        <div class="counter-box">
+            <strong id="seconds">0</strong>
+            <span>Seconds</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     OUR STORY
+========================= -->
+
+<section id="story" class="story section">
+
+    <p class="label">
+        OUR JOURNEY
+    </p>
+
+    <h2>
+        Our Love Story ❤️
+    </h2>
+
+    <div class="story-box">
+
+        <p>
+            Janet, from the moment you became part of my life,
+            my world became a little brighter, my heart a little
+            happier, and my days a little more beautiful.
+        </p>
+
+        <p>
+            I may not know exactly what tomorrow holds,
+            but I know that every memory I create with you
+            is something I will always treasure.
+        </p>
+
+        <p>
+            You are not just a chapter in my story.
+            You are one of my favorite parts of it.
+        </p>
+
+        <p class="signature">
+            Forever grateful for you, my love. ❤️
+            <br>
+            — Elvis
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     TIMELINE
+========================= -->
+
+<section class="timeline-section">
+
+    <p class="label">
+        SPECIAL MOMENTS
+    </p>
+
+    <h2>
+        Our Timeline 🥰
+    </h2>
+
+    <div class="timeline">
+
+        <div class="timeline-card">
+
+            <span>
+                25 NOVEMBER 2025
+            </span>
+
+            <h3>
+                ❤️ The Beginning
+            </h3>
+
+            <p>
+                The day our beautiful journey officially began.
+                One date that became a special part of our story.
             </p>
 
-            <button id="openStory">
-                Open Our Story ❤️
+        </div>
+
+
+        <div class="timeline-card">
+
+            <span>
+                EVERY DAY
+            </span>
+
+            <h3>
+                💕 Beautiful Memories
+            </h3>
+
+            <p>
+                Every conversation, every laugh,
+                every smile and every moment together
+                became another beautiful memory.
+            </p>
+
+        </div>
+
+
+        <div class="timeline-card">
+
+            <span>
+                OUR FUTURE
+            </span>
+
+            <h3>
+                💍 More To Come
+            </h3>
+
+            <p>
+                Our story is still being written,
+                and there are many more beautiful chapters ahead.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PHOTO MEMORIES
+========================= -->
+
+<section id="memories" class="memories section">
+
+    <p class="label">
+        OUR PHOTO ALBUM
+    </p>
+
+    <h2>
+        Beautiful Memories 📸
+    </h2>
+
+    <p class="description">
+        Every picture holds a story.
+        Every memory holds a piece of our hearts.
+    </p>
+
+
+    <div class="gallery">
+
+        <div class="photo-card">
+
+            <img src="photo1.jpg" alt="Janet and Elvis">
+
+            <div class="photo-caption">
+                <span>❤️</span>
+                <p>One of my favorite memories</p>
+            </div>
+
+        </div>
+
+
+        <div class="photo-card">
+
+            <img src="photo2.jpg" alt="Janet and Elvis">
+
+            <div class="photo-caption">
+                <span>💕</span>
+                <p>Beautiful moments together</p>
+            </div>
+
+        </div>
+
+
+        <div class="photo-card">
+
+            <img src="photo3.jpg" alt="Janet and Elvis">
+
+            <div class="photo-caption">
+                <span>🥰</span>
+                <p>A moment worth remembering</p>
+            </div>
+
+        </div>
+
+
+        <div class="photo-card">
+
+            <img src="photo4.jpg" alt="Janet and Elvis">
+
+            <div class="photo-caption">
+                <span>💖</span>
+                <p>Forever in my heart</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     REASONS
+========================= -->
+
+<section class="reasons section">
+
+    <p class="label">
+        WHY YOU ARE SPECIAL
+    </p>
+
+    <h2>
+        Reasons I Love You ❤️
+    </h2>
+
+    <div class="reason-grid">
+
+        <div class="reason-card">
+
+            <div>😊</div>
+
+            <h3>
+                Your Smile
+            </h3>
+
+            <p>
+                Your smile can make even an ordinary day beautiful.
+            </p>
+
+        </div>
+
+
+        <div class="reason-card">
+
+            <div>❤️</div>
+
+            <h3>
+                Your Heart
+            </h3>
+
+            <p>
+                Your beautiful heart is one of the things I treasure most.
+            </p>
+
+        </div>
+
+
+        <div class="reason-card">
+
+            <div>🥰</div>
+
+            <h3>
+                Your Presence
+            </h3>
+
+            <p>
+                Everything feels better when you're around.
+            </p>
+
+        </div>
+
+
+        <div class="reason-card">
+
+            <div>🌹</div>
+
+            <h3>
+                Simply You
+            </h3>
+
+            <p>
+                You are Janet, and that alone makes you special to me.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     LOVE LETTER
+========================= -->
+
+<section id="letter" class="letter-section">
+
+    <div class="letter">
+
+        <p class="label">
+            FROM MY HEART
+        </p>
+
+        <h2>
+            A Letter To You 💌
+        </h2>
+
+        <p>
+            My beautiful Janet,
+        </p>
+
+        <p>
+            Sometimes words aren't enough to explain how special
+            someone is to you.
+        </p>
+
+        <p>
+            But if I could give you one thing,
+            it would be the ability to see yourself through my eyes.
+        </p>
+
+        <p>
+            Then you would understand how much happiness,
+            peace and beauty you bring into my life.
+        </p>
+
+        <p>
+            Thank you for every smile, every conversation,
+            every beautiful moment and every memory.
+        </p>
+
+        <p>
+            No matter how many days pass,
+            I will always treasure the memories we create together.
+        </p>
+
+        <p class="letter-end">
+            With all my heart ❤️
+            <br><br>
+            Elvis
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     OUR SONG
+========================= -->
+
+<section class="song-section">
+
+    <p class="label">
+        OUR SPECIAL SONG
+    </p>
+
+    <h2>
+        Our Song 🎵
+    </h2>
+
+    <p>
+        A song that reminds me of us.
+    </p>
+
+    <audio controls>
+
+        <source src="our-song.mp3" type="audio/mpeg">
+
+        Your browser does not support audio.
+
+    </audio>
+
+</section>
+
+
+<!-- =========================
+     PRIVATE MEMORIES
+========================= -->
+
+<section class="private-section">
+
+    <p class="label">
+        JUST FOR US
+    </p>
+
+    <h2>
+        🔐 Our Private Memories
+    </h2>
+
+    <p>
+        Some memories are meant to stay between Janet & Elvis.
+    </p>
+
+    <button onclick="openPrivate()">
+        Open Private Memories 🔐
+    </button>
+
+    <div id="privateBox" class="private-box">
+
+        <h3>
+            Welcome To Our Secret Place ❤️
+        </h3>
+
+        <p>
+            Every picture, every message and every moment
+            is another piece of our beautiful story.
+        </p>
+
+        <img src="photo3.jpg" alt="Our private memory">
+
+        <p class="secret">
+            No matter how many memories we create,
+            I will always treasure the ones we share together. ❤️
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     LOVE QUESTION
+========================= -->
+
+<section class="question-section">
+
+    <div id="question">
+
+        <div class="big-heart">
+            ❤️
+        </div>
+
+        <h2>
+            Janet...
+        </h2>
+
+        <p>
+            Will you always be part of my story? 🥹❤️
+        </p>
+
+        <div class="buttons">
+
+            <button onclick="yesAnswer()">
+                YES ❤️
+            </button>
+
+            <button id="noButton" onmouseover="moveNo()">
+                NO 😜
             </button>
 
         </div>
 
-    </section>
+    </div>
 
 
-    <!-- Main Website -->
-    <main id="mainContent" class="hidden">
+    <div id="yesMessage">
 
-        <!-- Navigation -->
-        <nav>
+        <div class="big-heart">
+            💖
+        </div>
 
-            <div class="logo">
-                Janet ❤️ Elvis
-            </div>
+        <h2>
+            I Knew It! 🥰
+        </h2>
 
-            <div class="nav-links">
-                <a href="#home">Home</a>
-                <a href="#story">Our Story</a>
-                <a href="#memories">Memories</a>
-                <a href="#letter">Love Letter</a>
-                <a href="#future">Future</a>
-            </div>
+        <p>
+            Then let's keep creating beautiful memories together.
+        </p>
 
-        </nav>
+        <p class="forever">
+            Janet ❤️ Elvis
+            <br>
+            Forever & Always
+        </p>
 
+    </div>
 
-        <!-- Hero -->
-        <section id="home" class="hero">
+</section>
 
-            <div class="hero-content">
 
-                <p class="small-title">WELCOME TO OUR LITTLE WORLD</p>
+<!-- =========================
+     FINAL MESSAGE
+========================= -->
 
-                <h1>
-                    Janet <span>❤️</span> Elvis
-                </h1>
+<section class="final-section">
 
-                <p>
-                    A story written by two hearts,
-                    one beautiful journey.
-                </p>
+    <div class="big-heart">
+        ❤️
+    </div>
 
-                <a href="#story" class="hero-button">
-                    Explore Our Love ❤️
-                </a>
+    <h2>
+        Janet, You Are Special
+    </h2>
 
-            </div>
+    <p>
+        Thank you for being part of my story.
+    </p>
 
-        </section>
+    <p class="forever">
+        Janet ❤️ Elvis
+        <br>
+        25 • 11 • 2025
+    </p>
 
+</section>
 
-        <!-- Love Counter -->
-        <section class="counter-section">
 
-            <h2>We've Been Creating Memories For...</h2>
+<!-- FOOTER -->
 
-            <div class="counter">
+<footer>
 
-                <div>
-                    <span id="days">0</span>
-                    <small>Days</small>
-                </div>
+    <p>
+        Made with ❤️ by Elvis for Janet
+    </p>
 
-                <div>
-                    <span id="hours">0</span>
-                    <small>Hours</small>
-                </div>
+    <p>
+        © 2026 Janet & Elvis | Our Love Story
+    </p>
 
-                <div>
-                    <span id="minutes">0</span>
-                    <small>Minutes</small>
-                </div>
+</footer>
 
-                <div>
-                    <span id="seconds">0</span>
-                    <small>Seconds</small>
-                </div>
+</div>
 
-            </div>
 
-        </section>
-
-
-        <!-- Our Story -->
-        <section id="story" class="section">
-
-            <p class="section-label">OUR JOURNEY</p>
-
-            <h2>Our Love Story ❤️</h2>
-
-            <div class="story-text">
-
-                <p>
-                    Janet, from the moment you became part of my life,
-                    my world became a little brighter, my heart a little
-                    happier, and my days more beautiful.
-                </p>
-
-                <p>
-                    I don't know exactly what tomorrow holds,
-                    but I know that every memory I create with you
-                    is one I will always treasure.
-                </p>
-
-                <p>
-                    You are not just a chapter in my story —
-                    you are one of my favorite parts of it.
-                </p>
-
-                <p class="signature">
-                    Forever grateful for you, my love. ❤️
-                    <br>
-                    — Elvis
-                </p>
-
-            </div>
-
-        </section>
-
-
-        <!-- Timeline -->
-        <section class="timeline-section">
-
-            <p class="section-label">OUR SPECIAL MOMENTS</p>
-
-            <h2>Our Timeline 🥰</h2>
-
-            <div class="timeline">
-
-                <div class="timeline-item">
-
-                    <div class="timeline-date">
-                        25 NOV 2025
-                    </div>
-
-                    <div class="timeline-card">
-
-                        <h3>❤️ The Beginning</h3>
-
-                        <p>
-                            The day our beautiful journey officially began.
-                            A simple date that became a special part of our story.
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <div class="timeline-item">
-
-                    <div class="timeline-date">
-                        OUR MEMORIES
-                    </div>
-
-                    <div class="timeline-card">
-
-                        <h3>🥰 Beautiful Moments</h3>
-
-                        <p>
-                            Every conversation, every laugh,
-                            every smile and every moment together
-                            became another beautiful memory.
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <div class="timeline-item">
-
-                    <div class="timeline-date">
-                        FOREVER
-                    </div>
-
-                    <div class="timeline-card">
-
-                        <h3>💍 Our Future</h3>
-
-                        <p>
-                            Whatever the future brings,
-                            I hope we continue creating beautiful
-                            memories together.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- Memories -->
-        <section id="memories" class="section memories-section">
-
-            <p class="section-label">OUR PHOTO ALBUM</p>
-
-            <h2>Beautiful Memories 📸</h2>
-
-            <p class="section-description">
-                Every picture holds a story.
-            </p>
-
-            <div class="gallery">
-
-                <div class="photo-card">
-                    <img src="photo1.jpg" alt="Our Memory">
-                    <p>One of my favorite memories ❤️</p>
-                </div>
-
-                <div class="photo-card">
-                    <img src="photo2.jpg" alt="Our Memory">
-                    <p>Beautiful moments together 🥰</p>
-                </div>
-
-                <div class="photo-card">
-                    <img src="photo3.jpg" alt="Our Memory">
-                    <p>A moment worth remembering 💕</p>
-                </div>
-
-                <div class="photo-card">
-                    <img src="photo4.jpg" alt="Our Memory">
-                    <p>Forever in my heart ❤️</p>
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- Reasons -->
-        <section class="reasons-section">
-
-            <p class="section-label">WHY YOU ARE SPECIAL</p>
-
-            <h2>Reasons I Love You ❤️</h2>
-
-            <div class="reasons">
-
-                <div class="reason">
-                    <span>😊</span>
-                    <h3>Your Smile</h3>
-                    <p>Your smile can make even an ordinary day beautiful.</p>
-                </div>
-
-                <div class="reason">
-                    <span>❤️</span>
-                    <h3>Your Heart</h3>
-                    <p>Your beautiful heart is one of the things I treasure most.</p>
-                </div>
-
-                <div class="reason">
-                    <span>🥰</span>
-                    <h3>Your Presence</h3>
-                    <p>Everything feels better when you're around.</p>
-                </div>
-
-                <div class="reason">
-                    <span>🌹</span>
-                    <h3>You</h3>
-                    <p>Simply because you are Janet — and that is enough.</p>
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- Love Letter -->
-        <section id="letter" class="letter-section">
-
-            <div class="letter">
-
-                <p class="section-label">FROM MY HEART</p>
-
-                <h2>A Letter To You 💌</h2>
-
-                <p>
-                    My beautiful Janet,
-                </p>
-
-                <p>
-                    Sometimes words aren't enough to explain how special
-                    someone is to you. But if I could give you one thing,
-                    it would be the ability to see yourself through my eyes.
-                </p>
-
-                <p>
-                    Then you would understand how much happiness,
-                    peace and beauty you bring into my life.
-                </p>
-
-                <p>
-                    Thank you for every smile, every conversation,
-                    every beautiful moment and every memory.
-                </p>
-
-                <p>
-                    No matter how many days pass, I will always treasure
-                    the memories we have created together.
-                </p>
-
-                <p class="letter-ending">
-                    With all my heart ❤️
-                    <br><br>
-                    Elvis
-                </p>
-
-            </div>
-
-        </section>
-
-
-        <!-- Future -->
-        <section id="future" class="future-section">
-
-            <p class="section-label">LOOKING AHEAD</p>
-
-            <h2>Our Future 🌹</h2>
-
-            <p>
-                More smiles. More adventures.
-                More memories. More love.
-            </p>
-
-            <div class="future-box">
-
-                <h3>
-                    "The best memories are still waiting for us."
-                </h3>
-
-                <p>
-                    Here's to everything beautiful that lies ahead. ❤️
-                </p>
-
-            </div>
-
-        </section>
-
-
-        <!-- Final Message -->
-        <section class="final-section">
-
-            <div class="big-heart">
-                ❤️
-            </div>
-
-            <h2>Janet, You Are Special</h2>
-
-            <p>
-                Thank you for being part of my story.
-            </p>
-
-            <p class="forever">
-                Janet ❤️ Elvis
-                <br>
-                25 • 11 • 2025
-            </p>
-
-        </section>
-
-
-        <!-- Footer -->
-        <footer>
-
-            <p>
-                Made with ❤️ by Elvis for Janet
-            </p>
-
-            <p>
-                © 2026 Janet & Elvis | Our Love Story
-            </p>
-
-        </footer>
-
-    </main>
-
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
