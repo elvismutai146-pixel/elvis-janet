@@ -127,34 +127,44 @@ photos.forEach(function(photo) {
     });
 
 });
-/* 🌸 FLOATING FLOWERS */
+// 🌸 CONTINUOUS RUNNING FLOWERS
 
 const flowerContainer = document.getElementById("flower-container");
 
-const flowers = ["🌸", "🌷", "🌹", "🌺", "💮", "🌼"];
+const flowerList = [
+    "🌸",
+    "🌷",
+    "🌹",
+    "🌺",
+    "🌼",
+    "💮"
+];
 
-function createFlower() {
+function createRunningFlower() {
 
     const flower = document.createElement("div");
 
-    flower.classList.add("floating-flower");
+    flower.className = "running-flower";
 
-    flower.innerHTML =
-        flowers[Math.floor(Math.random() * flowers.length)];
+    flower.textContent =
+        flowerList[Math.floor(Math.random() * flowerList.length)];
 
-    flower.style.left = Math.random() * 100 + "vw";
+    flower.style.left =
+        Math.random() * 100 + "vw";
 
     flower.style.fontSize =
-        (18 + Math.random() * 18) + "px";
+        (20 + Math.random() * 20) + "px";
 
     flower.style.animationDuration =
         (5 + Math.random() * 5) + "s";
 
     flowerContainer.appendChild(flower);
 
-    setTimeout(() => {
+    setTimeout(function () {
         flower.remove();
     }, 10000);
 }
 
-setInterval(createFlower, 700);
+createRunningFlower();
+
+setInterval(createRunningFlower, 500);
