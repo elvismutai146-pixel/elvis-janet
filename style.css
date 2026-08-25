@@ -961,3 +961,41 @@ footer {
     }
 
 }
+/* 🌸 FLOATING FLOWERS */
+
+#flower-container {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 9999;
+}
+
+.floating-flower {
+    position: absolute;
+    bottom: -50px;
+    font-size: 24px;
+    animation: flowerRise linear forwards;
+    opacity: 0;
+}
+
+@keyframes flowerRise {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateY(-50vh) rotate(180deg);
+        opacity: 0.9;
+    }
+
+    100% {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
