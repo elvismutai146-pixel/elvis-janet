@@ -961,25 +961,28 @@ footer {
     }
 
 }
-/* 🌸 FLOATING FLOWERS */
+/* 🌸 RUNNING FLOWERS */
 
 #flower-container {
     position: fixed;
-    inset: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
     pointer-events: none;
     overflow: hidden;
-    z-index: 9999;
+    z-index: 99999;
 }
 
-.floating-flower {
+.running-flower {
     position: absolute;
-    bottom: -50px;
-    font-size: 24px;
-    animation: flowerRise linear forwards;
-    opacity: 0;
+    bottom: -60px;
+    animation-name: flowerUp;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
 }
 
-@keyframes flowerRise {
+@keyframes flowerUp {
     0% {
         transform: translateY(0) rotate(0deg);
         opacity: 0;
@@ -989,9 +992,8 @@ footer {
         opacity: 1;
     }
 
-    50% {
-        transform: translateY(-50vh) rotate(180deg);
-        opacity: 0.9;
+    90% {
+        opacity: 1;
     }
 
     100% {
