@@ -609,23 +609,99 @@ nav {
 
 
 /* =========================
-   SONG
+   OUR SONG ❤️
 ========================= */
 
 .song-section {
     text-align: center;
+    padding: 70px 20px;
+    background: linear-gradient(135deg, #fff0f5, #ffe4ec);
+}
 
-    padding: 100px 20px;
+.song-section .label {
+    color: #ff4d88;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
 
+.song-section h2 {
+    font-size: 38px;
+    color: #d6336c;
+    margin-bottom: 15px;
+}
+
+.song-intro {
+    max-width: 600px;
+    margin: 0 auto 35px;
+    color: #666;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.song-card {
+    max-width: 500px;
+    margin: auto;
+    padding: 35px 25px;
     background: white;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
 }
 
-.song-section audio {
-    width: min(500px, 90%);
-
-    margin-top: 30px;
+.music-icon {
+    font-size: 55px;
+    margin-bottom: 15px;
+    animation: musicBeat 1.5s infinite;
 }
 
+.song-card h3 {
+    color: #d6336c;
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.song-card p {
+    color: #777;
+}
+
+.song-card audio {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.song-message {
+    font-style: italic;
+    color: #d6336c !important;
+    font-size: 15px;
+}
+
+@keyframes musicBeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.15);
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    .song-section {
+        padding: 50px 15px;
+    }
+
+    .song-section h2 {
+        font-size: 30px;
+    }
+
+    .song-card {
+        padding: 30px 18px;
+    }
+
+}
 
 /* =========================
    PRIVATE
